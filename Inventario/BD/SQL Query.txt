@@ -1,0 +1,311 @@
+<<<<<<< HEAD
+CREATE TABLE Proveedor(
+	idNitProv VARCHAR(15) UNIQUE NOT NULL,
+	Razon_Social VARCHAR,
+	Ciudad VARCHAR,
+	PRIMARY KEY (idNitProv)
+);
+
+CREATE TABLE Productos (
+	idNit	VARCHAR(15),
+	Codigo	VARCHAR(15) NOT NULL,
+	Descripcion	VARCHAR,
+	Und	VARCHAR(10),
+	Cantidad	DOUBLE,
+	Precio	DOUBLE,
+	Fecha	DATE,
+	PRIMARY KEY(idNit,Codigo)
+);
+
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-1','-','Bogotá');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-2','-','Bogotá');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-3','-','Bogotá');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-4','-','Bogotá');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-5','-','Bogotá');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-6','-','Medellin');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-7','-','Medellin');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-8','-','Medellin');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-9','-','Medellin');
+INSERT INTO Proveedor(idNitProv,Razon_Social,Ciudad) VALUES ('800-10','-','Medellin');
+
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(idNit,Codigo,Descripcion,Und,Cantidad,Precio,Fecha) 
+=======
+CREATE TABLE Proveedores(
+	IdNit VARCHAR(15) UNIQUE NOT NULL,
+	Razon_Social VARCHAR,
+	Ciudad VARCHAR,
+	PRIMARY KEY (IdNit)
+);
+
+CREATE TABLE "Productos" (
+	"IdNitProv"	VARCHAR(15) NOT NULL,
+	"Codigo"	VARCHAR(15) NOT NULL,
+	"Descripcion"	VARCHAR,
+	"Unidad"	VARCHAR(10),
+	"Cantidad"	DOUBLE,
+	"Precio"	DOUBLE,
+	"Fecha"	DATE,
+	FOREIGN KEY("IdNitProv") REFERENCES Proveedores(IdNit),
+	PRIMARY KEY("IdNitProv","Codigo")
+);
+
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-1','-','Bogotá');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-2','-','Bogotá');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-3','-','Bogotá');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-4','-','Bogotá');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-5','-','Bogotá');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-6','-','Medellin');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-7','-','Medellin');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-8','-','Medellin');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-9','-','Medellin');
+INSERT INTO Proveedores(IdNit,Razon_Social,Ciudad) VALUES ('800-10','-','Medellin');
+
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT006','Puntilla 1/2" de acero','M3',10,100,'18/11/2023');
+
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT011','Puntilla 1/4" de acero','M3',10,120,'18/11/2023');
+
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT010','Puntilla 1/8" de acero','M3',10,140,'18/11/2023');
+
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT009','Puntilla 1/16" de acero','M3',10,160,'18/11/2023');
+
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-10','PT008','Puntilla 1/32" de acero','M3',10,180,'18/11/2023');
+
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-1','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-2','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-3','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-4','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-5','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-6','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-7','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-8','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+VALUES ('800-9','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
+INSERT INTO Productos(IdNitProv,Codigo,Descripcion,Unidad,Cantidad,Precio,Fecha) 
+>>>>>>> fbc7d09 (Cancelar sin terminar)
+VALUES ('800-10','PT007','Puntilla 1/64" de acero','M3',10,200,'18/11/2023');
